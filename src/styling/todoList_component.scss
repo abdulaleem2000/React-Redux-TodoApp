@@ -1,0 +1,57 @@
+// TodoList.scss
+
+.todo-list {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.todo-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-text {
+  flex: 1;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.delete-button,
+.complete-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.complete-button {
+  background-color: #1e2697;
+  color: #fff;
+}
+
+.complete-button:hover {
+  background-color: #150e64;
+  color: #fff;
+}
+
+.todo-item:hover {
+  background-color: #0c034f0d;
+}
+
+.completed {
+  text-decoration: line-through;
+}
